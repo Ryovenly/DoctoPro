@@ -15,8 +15,8 @@ export default ({ mode }) => {
             sourcemap: true
           },
           manifest: {
-            name: 'DoctoClient',
-            short_name: 'DoctoC',
+            name: 'DoctoPro',
+            short_name: 'DoctoP',
             description: 'My Awesome App description',
             theme_color: '#ffffff',
             icons: [
