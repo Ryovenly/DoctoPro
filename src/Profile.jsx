@@ -1,5 +1,4 @@
 import { useContext,useState,useEffect } from "react";
-import AuthContext from "./AuthContext";
 import * as React from 'react';
 
 import { useNavigate, Navigate } from "react-router-dom";
@@ -19,7 +18,6 @@ const logout = () => {
   
 
 const Profile = () => {
-  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 
 
@@ -65,9 +63,6 @@ const updateDoctor = async (e) => {
 }
 
 
-  if (!user) {
-    return <Navigate replace to="/login" />;
-  }
   return (
     <>
       <h1>Vos données</h1>
